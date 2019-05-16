@@ -24,6 +24,7 @@ public class AddUserServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -49,7 +50,6 @@ public class AddUserServlet extends HttpServlet {
 		String phone = request.getParameter("phone");
 		int lend_num = Integer.parseInt(request.getParameter("lend_num"));
 		int max_num = Integer.parseInt(request.getParameter("max_num"));
-	
 		AdminDao userdao = new AdminDao();
 		//调用函数添加读者信息
 		userdao.Register(username,password,name,email,phone,lend_num,max_num);
