@@ -27,6 +27,7 @@ public class BookDao {
 	 * @param press
 	 * @param num
 	 */
+	
 	public void addBook(String card, String name, String type, String autho, String press, int num) {
 		// TODO Auto-generated method stub
 		Connection conn = DBUtil.getConnectDb();

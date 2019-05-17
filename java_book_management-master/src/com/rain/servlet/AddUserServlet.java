@@ -23,8 +23,6 @@ public class AddUserServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
-    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -55,5 +53,4 @@ public class AddUserServlet extends HttpServlet {
 		userdao.Register(username,password,name,email,phone,lend_num,max_num);
         response.sendRedirect("/books/admin_user.jsp");
 	}
-
 }

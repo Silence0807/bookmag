@@ -17,6 +17,7 @@ public class TypeDao {
 	 * 鑾峰彇鎵�鏈夊浘涔︾被鍨嬬殑淇℃伅锛岃繑鍥炴暟缁勫舰寮�
 	 * @return
 	 */
+	
 	public ArrayList<TypeBean> get_ListInfo(){
 		ArrayList<TypeBean> tag_Array = new ArrayList<TypeBean>();
 		Connection conn = DBUtil.getConnectDb();
@@ -40,6 +41,7 @@ public class TypeDao {
 		}
 		return tag_Array;
 	}
+	
 	/**
 	 * 淇敼鍥句功鍒嗙被鐨勪俊鎭�
 	 * @param tid
