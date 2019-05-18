@@ -14,6 +14,7 @@ public class BookBean {
 	public int getBid() {
 		return bid;
 	}
+	
 	public void setBid(int bid) {
 		this.bid = bid;
 	}
