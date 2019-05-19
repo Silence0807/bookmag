@@ -16,8 +16,7 @@ import com.rain.dao.AdminDao;
  */
 @WebServlet("/RegisterServlet")
 public class RegisterServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
+	private static final long serialVersionUID = 1L;    
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -25,7 +24,6 @@ public class RegisterServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -33,7 +31,6 @@ public class RegisterServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -53,8 +50,6 @@ public class RegisterServlet extends HttpServlet {
 		AdminDao userdao = new AdminDao();
 		//将注册信息存入数据库，再返回登录
 		userdao.Register(username,password,name,email,phone,lend_num,max_num);
-        response.sendRedirect("/books/login.jsp");
-		
+        response.sendRedirect("/books/login.jsp");	
 	}
-
 }

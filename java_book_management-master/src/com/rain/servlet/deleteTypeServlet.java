@@ -16,7 +16,6 @@ import com.rain.dao.TypeDao;
 @WebServlet("/deleteTypeServlet")
 public class deleteTypeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -24,7 +23,6 @@ public class deleteTypeServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -39,7 +37,6 @@ public class deleteTypeServlet extends HttpServlet {
 		typedao.deleteBookType(tid);
 		response.sendRedirect("/books/admin_booktype.jsp");
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
