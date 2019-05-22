@@ -16,8 +16,6 @@ import com.rain.util.DBUtil;
  * 鍏充簬鍥句功杩炴帴鏁版嵁搴撶殑鎵�鏈夋搷浣滅殑绫�
  */
 public class BookDao {
-
-	
 	/**
 	 * 娣诲姞鍥句功淇℃伅锛屼紶鍏ユ墍鏈夌殑淇℃伅
 	 * @param card
@@ -27,7 +25,6 @@ public class BookDao {
 	 * @param press
 	 * @param num
 	 */
-	
 	public void addBook(String card, String name, String type, String autho, String press, int num) {
 		// TODO Auto-generated method stub
 		Connection conn = DBUtil.getConnectDb();
