@@ -18,9 +18,8 @@
               <script src="static/ajax-lib/ajaxutils.js"></script>
             <script src="static/js/adminUpdateInfo.js"></script>
              <script src="static/js/adminUpdatePwd.js"></script>
-      
+       
 </head>
-
 
 
 

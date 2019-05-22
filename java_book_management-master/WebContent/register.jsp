@@ -21,7 +21,6 @@
 
 </head>
 
-
 <body data-type="login">
     <script src="static/assets/js/theme.js"></script>
     <div class="am-g tpl-g">
@@ -45,7 +44,6 @@
                 <span class="tpl-login-content-info">
                   创建一个新的用户
               </span>
-
 
 
                 <form class="am-form tpl-form-line-form" method="post" action="/books/RegisterServlet">
