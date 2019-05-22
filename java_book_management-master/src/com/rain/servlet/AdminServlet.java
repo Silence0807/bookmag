@@ -29,7 +29,6 @@ public class AdminServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -74,6 +73,7 @@ public class AdminServlet extends HttpServlet {
 				response.sendRedirect("/books/"+url+".jsp");
 			}else{
 				out.write("<script type='text/javascript'>alert('password error');location.href='"+url+".jsp';  </script>");
+				
 			}
 		}else{
 			//修改个人资料
@@ -87,4 +87,5 @@ public class AdminServlet extends HttpServlet {
 			response.sendRedirect("/books/"+url+".jsp");
 		}
 	}
+
 }

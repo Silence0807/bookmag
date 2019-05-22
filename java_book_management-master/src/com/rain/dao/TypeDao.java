@@ -9,15 +9,13 @@ import java.util.ArrayList;
 import com.rain.bean.TypeBean;
 import com.rain.util.DBUtil;
 /**
- * 鍥句功鍒嗙被鐨勭被
+ * 图书分类的类
  */
 public class TypeDao {
-	
 	/**
-	 * 鑾峰彇鎵�鏈夊浘涔︾被鍨嬬殑淇℃伅锛岃繑鍥炴暟缁勫舰寮�
+	 * 获取所有图书类型的信息，返回数组形式
 	 * @return
 	 */
-	
 	public ArrayList<TypeBean> get_ListInfo(){
 		ArrayList<TypeBean> tag_Array = new ArrayList<TypeBean>();
 		Connection conn = DBUtil.getConnectDb();
@@ -41,9 +39,8 @@ public class TypeDao {
 		}
 		return tag_Array;
 	}
-	
 	/**
-	 * 淇敼鍥句功鍒嗙被鐨勪俊鎭�
+	 * 修改图书分类的信息
 	 * @param tid
 	 * @param name
 	 */
@@ -63,7 +60,7 @@ public class TypeDao {
 		}
 	}
 	/**
-	 * 娣诲姞涓�涓浘涔﹀垎绫�
+	 * 添加一个图书分类
 	 * @param name
 	 */
 	public void addBookType(String name) {
@@ -82,7 +79,7 @@ public class TypeDao {
 		}
 	}
 	/**
-	 * 鍒犻櫎涓�涓浘涔﹀垎绫�
+	 * 删除一个图书分类
 	 * @param tid
 	 */
 	public void deleteBookType(int tid) {

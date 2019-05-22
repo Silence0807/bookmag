@@ -16,19 +16,15 @@ public class AdminBean {
 	public int getAid() {
 		return aid;
 	}
-	
 	public void setAid(int aid) {
 		this.aid = aid;
 	}
-	
 	public int getStatus() {
 		return status;
 	}
-	
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	
 	public String getUsername() {
 		return username;
 	}

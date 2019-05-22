@@ -4,7 +4,6 @@ public class BookBean {
 	/**
 	 * 图书的数据表的bean
 	 */
-	/
 	private int bid;//id
 	private String name;//图书名称
 	private String card;//图书号
@@ -15,7 +14,6 @@ public class BookBean {
 	public int getBid() {
 		return bid;
 	}
-	
 	public void setBid(int bid) {
 		this.bid = bid;
 	}

@@ -20,7 +20,6 @@ public class AdminDao {
 	 * @param password
 	 * @return
 	 */
-	
 	public boolean Login_verify(String username,String password){
 		Connection conn = DBUtil.getConnectDb();
 		String sql = "select * from admin where username="+username+" and password="+password;
@@ -40,7 +39,6 @@ public class AdminDao {
 		}
 		return false;
 	}
-	
 	/**
 	 * 注册账号的函数，传入账号，密码，姓名，邮箱，手机号，借阅天数，可借阅数
 	 * @param username

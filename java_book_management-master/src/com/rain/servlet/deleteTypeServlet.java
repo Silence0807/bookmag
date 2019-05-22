@@ -16,6 +16,7 @@ import com.rain.dao.TypeDao;
 @WebServlet("/deleteTypeServlet")
 public class deleteTypeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -23,11 +24,10 @@ public class deleteTypeServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-    
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
@@ -39,7 +39,7 @@ public class deleteTypeServlet extends HttpServlet {
 		typedao.deleteBookType(tid);
 		response.sendRedirect("/books/admin_booktype.jsp");
 	}
-	
+
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

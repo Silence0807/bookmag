@@ -1,18 +1,22 @@
 package com.rain.servlet;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import com.rain.dao.AdminDao;
 import com.rain.dao.TypeDao;
+
 /**
  * Servlet implementation class deleteUserServlet
  */
 @WebServlet("/deleteUserServlet")
 public class deleteUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -20,6 +24,7 @@ public class deleteUserServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -34,6 +39,7 @@ public class deleteUserServlet extends HttpServlet {
 		admindao.deleteUser(aid);
 		response.sendRedirect("/books/admin_user.jsp");
 	}
+
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -41,4 +47,5 @@ public class deleteUserServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+
 }
