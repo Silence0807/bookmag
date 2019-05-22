@@ -4,6 +4,7 @@ public class BookBean {
 	/**
 	 * 图书的数据表的bean
 	 */
+	///测试一下下
 	private int bid;//id
 	private String name;//图书名称
 	private String card;//图书号
