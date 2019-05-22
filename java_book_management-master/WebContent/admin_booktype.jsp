@@ -18,24 +18,15 @@
               <script src="static/ajax-lib/ajaxutils.js"></script>
             <script src="static/js/adminUpdateInfo.js"></script>
              <script src="static/js/adminUpdatePwd.js"></script>
-       
 </head>
-
-
-
-
-
 <script src="static/js/jquery.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
-
-
 <body class="bootstrap-admin-with-small-navbar">
 <%
 AdminBean admin = new AdminBean();
 String aid = (String)session.getAttribute("aid");
 AdminDao admindao = new AdminDao();
 admin = admindao.get_AidInfo2(aid);
-
 %>
     <nav class="navbar navbar-inverse navbar-fixed-top bootstrap-admin-navbar bootstrap-admin-navbar-under-small" role="navigation">
         <div class="container">
@@ -62,7 +53,6 @@ admin = admindao.get_AidInfo2(aid);
             </div>
         </div>
     </nav>
-
     <div class="container">
         <!-- left, vertical navbar & content -->
         <div class="row">
@@ -83,16 +73,11 @@ admin = admindao.get_AidInfo2(aid);
                     </li>
                     <li>
                         <a href="/books/admin_history.jsp"><i class="glyphicon glyphicon-chevron-right"></i> 图书归还信息</a>
-                    </li>
-                  
-                </ul>
-                
+                    </li> 
+                </ul>  
             </div>
-
             <!-- content -->
-            <div class="col-md-10">
-                
-                
+            <div class="col-md-10">    
               <div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default bootstrap-admin-no-table-panel">
@@ -110,9 +95,7 @@ admin = admindao.get_AidInfo2(aid);
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                
+                </div>           
                 <div class="row">
                     <div class="col-lg-12">
                         <table id="data_list" class="table table-hover table-bordered" cellspacing="0" width="100%">
